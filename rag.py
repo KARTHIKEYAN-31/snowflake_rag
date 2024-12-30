@@ -19,10 +19,10 @@ COLUMNS = [
     "file_name"
 ]
 
-connection_parameters = { "account": "QLZCZMT.LPB49695", 
-                         "user": "KARTHIKEYAN", 
-                         "password": "Karthi31@tvm", 
-                         "role": "ACCOUNTADMIN",
+connection_parameters = { "account": st.secrets["ACCOUNT"], 
+                         "user": st.secrets["USER"], 
+                         "password": st.secrets["PASSWORD"], 
+                         "role": st.secrets["ROLE"],
                          "database": CORTEX_SEARCH_DATABASE, 
                          "schema": CORTEX_SEARCH_SCHEMA }
 
