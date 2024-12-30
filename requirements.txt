@@ -1,3 +1,5 @@
 snowflake
 streamlit
 pandas
+snowflake-snowpark-python
+
