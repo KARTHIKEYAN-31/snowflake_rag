@@ -25,7 +25,9 @@ connection_parameters = { "account": st.secrets["ACCOUNT"],
                          "role": st.secrets["ROLE"],
                          "warehouse": warehouse,
                          "database": CORTEX_SEARCH_DATABASE, 
-                         "schema": CORTEX_SEARCH_SCHEMA }
+                         "schema": CORTEX_SEARCH_SCHEMA,
+                         "ssl"=True,
+                         }
 
 session = Session.builder.configs(connection_parameters).create()
 
