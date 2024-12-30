@@ -11,7 +11,7 @@ NUM_CHUNKS = 3
 CORTEX_SEARCH_DATABASE = "RAG_DATABASE"
 CORTEX_SEARCH_SCHEMA = "RAG"
 CORTEX_SEARCH_SERVICE = "RAG_SEARCH_SERVICE"
-
+warehouse = "COMPUTE_WH"
 
 COLUMNS = [
     "chunk",
@@ -23,6 +23,7 @@ connection_parameters = { "account": st.secrets["ACCOUNT"],
                          "user": st.secrets["USER"], 
                          "password": st.secrets["PASSWORD"], 
                          "role": st.secrets["ROLE"],
+                         "warehouse": warehouse,
                          "database": CORTEX_SEARCH_DATABASE, 
                          "schema": CORTEX_SEARCH_SCHEMA }
 
